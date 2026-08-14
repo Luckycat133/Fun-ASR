@@ -6,3 +6,14 @@ dist/
 build/
 .eggs/
 *.tar.gz
+
+# Large model weights / binaries — must never be tracked (see 2026-08-11 git audit)
+models/
+gguf/
+bin/
+*.gguf
+*.safetensors
+*.bin
+
+# WorkBuddy local state (never track)
+.workbuddy/
